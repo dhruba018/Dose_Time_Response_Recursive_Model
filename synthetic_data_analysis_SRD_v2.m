@@ -33,8 +33,8 @@ px_pred0 = dose_time_px(strcmpi(dose_time_px.Time_point, time_pts(t-1)), :);    
 
 resp_pred = dose_time_resp;                               % Response data
 noise_types = {'None', 'Uniform', 'Gaussian'};
-fprintf('What kind of noise do you want in response data?\n')
-noise = noise_types{input('Enter 0, 1 or 2 for either "None", "Uniform" or "Gaussian".\nAns = ') + 1};
+fprintf('What kind of noise do you want in response data?\n\t')
+noise = noise_types{input('Enter 0, 1 or 2 for either "None", "Uniform" or "Gaussian". Ans = ') + 1};
 rng(0);         n_para = 0.05;                                  % Additive noise generator seed & parameter
 switch lower(noise)
     case 'none'
@@ -49,6 +49,7 @@ resp_pred.Response = resp_pred.Response + noise_resp;   % Noisy resp
 % m-fold crossvalidation...
 train_idx = cell(m, 3);      test_idx = cell(m, 3);     Ytest = zeros(D, m);
 Ypred = struct('HM', zeros(D, m), 'RF', zeros(D, m));
+tic
 for i = 1 : m
     test_idx{i, 1} = (px_pred.Indiv == i);                         train_idx{i, 1} = ~test_idx{i, 1};
     test_idx{i, 2} = (time_slope_px_pred.Indiv == i);       train_idx{i, 2} = ~test_idx{i, 2};
@@ -77,6 +78,7 @@ for i = 1 : m
     Ytest(:, i) = yy_test(:, t);                                  % Validation matrix for pred tp
     Ypred.HM(:, i) = yy_pred1;                 Ypred.RF(:, i) = yy_pred2;
 end
+toc
 
 % % Error result table...
 fprintf('Results summary: \n')
@@ -103,7 +105,7 @@ for i = 1 : m
     zlabel('Response', 'FontName', 'Book Antiqua', 'FontWeight', 'bold', 'FontSize', 10)
     title(['Subject ', num2str(i)],...
         'FontName', 'Book Antiqua', 'FontWeight', 'bold', 'FontSize', 11, 'Color', [0, 0, 0])
-    xticks(doses(1:2:end)),      yticks(tym(1:2:end));        zticks(0:0.2:1)
+    xticks(doses(1:2:end)),      yticks(tym(1:2:end));        zticks(0:0.2:1),      grid on
     xticklabels(strtrim(cellstr(num2str(round(doses(1:2:end), 2)))))
     yticklabels(cellstr(num2str(tym(1:2:end))))
     
@@ -113,12 +115,15 @@ for i = 1 : m
     ylabel('Response', 'FontName', 'Book Antiqua', 'FontWeight', 'bold', 'FontSize', 11)
     title(['Subject ', num2str(i)],...
         'FontName', 'Book Antiqua', 'FontWeight', 'bold', 'FontSize', 12, 'Color', [0, 0, 0])
-    xticks(doses),      yticks(0:0.2:1)
+    xticks(doses),      yticks(0:0.2:1),      grid on
     xticklabels(strtrim(cellstr(num2str(round(doses, 2)))))
 end
 ht = [ ];
-titlelist = {'\bf3D Dose-Time Drug Response Surface'; '\bfDose-Response Curve Prediction'};
+titlelist = {'3D Dose-Time Drug Response Surface'; 'Dose-Response Curve Prediction'};
 switch lower(noise)
+    case 'none'
+        addtitlepart = repmat({'\color[rgb]{0.5, 0, 0}Noise = 0'}, [2, 1]);
+        titlelist = join([titlelist, addtitlepart], ', ');
     case 'uniform'
         addtitlepart = repmat({'\color[rgb]{0.5, 0, 0}Noise \sim {\itU}(\delta, \delta)'}, [2, 1]);
         titlelist = join([titlelist, addtitlepart], ', ');
