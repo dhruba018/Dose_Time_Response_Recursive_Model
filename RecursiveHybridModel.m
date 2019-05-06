@@ -63,15 +63,15 @@ classdef RecursiveHybridModel
         %             t_:      Previous time point scalar value. By default
         %                       RecursiveHybridModel performs the One-step
         %                       Ahead Prediction i.e., default value is 0.
-        %                       [See Dhruba et al. (2018) for more details]
+        %                       [See Dhruba et al. (2019) for more details]
         %        numTree: No. of trees to be used in building the Random Forest 
         %                       (TreeBagger) models. Default value is 100.
         %        rngSeed: Random number generator seed used to reproduce
         %                       the results of RF. Default value is 1.
         %    alphaModel: Model for predicting the Growth parameter [see
-        %                       Dhruba et al. (2018)]. A TreeBagger object.
+        %                       Dhruba et al. (2019)]. A TreeBagger object.
         %  gammaModel: Model for predicting the Scaling parameter [see
-        %                       Dhruba et al. (2018)]. A TreeBagger object.
+        %                       Dhruba et al. (2019)]. A TreeBagger object.
         % 
         % OUTPUT ARGUMENTS:
         %       ParameterModelObject: RecursiveHybridModel object with the
@@ -115,7 +115,7 @@ classdef RecursiveHybridModel
             %      CostValue = RecursiveCostFunction(ResponseTimeSeries, RecursivePatameters, t_)
             % Cost function definition used in the optimization of time
             % series response data for prediction at further time points.
-            % [See Eq. (11) in Dhruba et al. (2018)]
+            % [See Eq. (19) in Dhruba et al. (2019)]
             % 
             % INPUT ARGUMENTS:
             %       ResponseTimeSeries: Ty x 1 vector of Training response
