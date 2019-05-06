@@ -41,7 +41,7 @@ classdef RecursiveHybridModel
         % Recursive Hybrid model training... 
         %   Output provides alpha & gamma models...
         function ParameterModelObject = BuildModel(RecursiveHybridModelObject)
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % FUNCTION
         %      ParameterModelObject = BuildModel(RecursiveHybridModelObject)
         % Trains the Recursive Hybrid Model for dose-time drug response prediction, 
@@ -83,7 +83,7 @@ classdef RecursiveHybridModel
         %                       in prediction.
         %    alphaModel: Model for Growth parameter. A TreeBagger object.
         %  gammaModel: Model for Scaling parameter. A TreeBagger object.
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
             doses = RecursiveHybridModelObject.Conc;            t_ = RecursiveHybridModelObject.time_;
             x_train = RecursiveHybridModelObject.X;               y_train = RecursiveHybridModelObject.Y;
@@ -110,7 +110,7 @@ classdef RecursiveHybridModel
             
             % Cost function definition...
             function CostValue = RecursiveCostFunction(ResponseTimeSeries, RecursivePatameters, t_)
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             % FUNCTION
             %      CostValue = RecursiveCostFunction(ResponseTimeSeries, RecursivePatameters, t_)
             % Cost function definition used in the optimization of time
@@ -127,7 +127,7 @@ classdef RecursiveHybridModel
             % 
             % OUTPUT ARGUMENTS:
             %                       CostValue: Cost of optimization. A scalar value.
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                 
                 y_di = ResponseTimeSeries;                 T = length(ResponseTimeSeries);
                 alfa = RecursivePatameters(2);             gama = RecursivePatameters(1);
@@ -143,7 +143,7 @@ classdef RecursiveHybridModel
         % Predict response @ t using y(t_)...
         function [RecursiveHybridModelPrediction, AlphaMatrix, GammaMatrix] =...
                                                     ModelPredict(ParameterModelObject, X_test, Y0_test)
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % FUNCTION
         %      [RecursiveHybridModelPrediction, AlphaMatrix, GammaMatrix] =...
         %                                                     ModelPredict(ParameterModelObject, X_test, Y0_test)
@@ -178,7 +178,7 @@ classdef RecursiveHybridModel
         %       GammaMatrix: D x m matrix of the predicted Scaling
         %                   coefficient values.
         %
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             
             x_test = X_test;                                                   y0_test = Y0_test;
             doses = ParameterModelObject.Conc;                   t_ = ParameterModelObject.time_;
