@@ -3,6 +3,6 @@ Majority of the drug sensitivity prediction models attempt to predict a single r
 
 **Description.**  
 
-    _RecursiveHybridModel.m_: Model class with all necessary methods  
-    _synthetic_data_analysis_SRD_v2.m_: Synthetic experiment code
-    _synthetic_recursive.mat_: Data file for synthetic experiment
+    RecursiveHybridModel.m: Model class with all necessary methods  
+    synthetic_data_analysis_SRD_v2.m: Synthetic experiment code
+    synthetic_recursive.mat: Data file for synthetic experiment
