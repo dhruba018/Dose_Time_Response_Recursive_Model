@@ -1,4 +1,4 @@
-### Modeling the complete dose-time-response surface  
+### Modeling the complete dose-time drug sensitivity surface  
 Majority of the drug sensitivity prediction models attempt to predict a single representative metric of the complete dose-response curve such as IC<sub>50</sub> or AUC at steady-state. This can potentially fail to provide some crucial information such as the trend of change in sensitivity as dose increases or the difference in sensitivity trends between two dose-response curves with similar AUC and/or IC<sub>50</sub> values. These information can often be used for a particular patient receiving precision therapy to select the most effective drug dosage or to avoid potential drug toxicity at the current time point. 
 
 ![Dose-time-sensitivity](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/3D_dose_time_resp_curve_example.png)
