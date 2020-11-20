@@ -1,4 +1,4 @@
-## Modeling the complete dose-time drug sensitivity surface
+## Modeling the Complete Dose-time Drug Sensitivity Surface
 
 **Reference:** [Recursive model for dose-time responses in pharmacological studies](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2831-4)
 
@@ -21,8 +21,10 @@ From this equation, we can get a recursive relation for drug sensitivity between
 
 ![recursive_eqn](https://latex.codecogs.com/gif.latex?y_%7Bt%2C%20d%2C%20i%7D%20%3D%20y_%7Bt%5E-%2C%20d%2C%20i%7D%20%5C%2C%20e%5E%7B%5Cgamma_%7Bd%2C%20i%7D%20%5Cleft%28%201%20%5C%2C%20-%20%5C%2C%20e%5E%7B%5Calpha_%7Bd%2C%20i%7D%7D%20%5Cright%29%7D)
 
-and can be used to predict the sensitivity at a certain dose and/or time point. The details of the model is described in the 2019 paper: [Recursive model for dose-time responses in pharmacological studies](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2831-4). 
+The details of the model is described in our 2019 paper: [Recursive model for dose-time responses in pharmacological studies](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2831-4). 
 
+
+### File description
 This repository contains the necessary code to reproduce the results described in the paper and the corresponding data for the synthetic experiment.  
 
     RecursiveHybridModel.m: Model class with all necessary methods  
