@@ -33,9 +33,9 @@ This repository contains the necessary code to reproduce the results described i
 
 ## How to Cite
 If you use our Recursive Hybrid approach for your research/application, please cite the following paper -  
- > Dhruba, S.R., Rahman, A. et al. Recursive model for dose-time responses in pharmacological studies. BMC Bioinformatics 20, 317 (2019). 
-   DOI: https://doi.org/10.1186/s12859-019-2831-4
+    > Dhruba, S.R., Rahman, A. et al. Recursive model for dose-time responses in pharmacological studies. BMC Bioinformatics 20, 317 (2019). 
+      DOI: https://doi.org/10.1186/s12859-019-2831-4
 
 If you use our work on the exploration of proteomic data for predictive modeling of drug sensitivity, please cite the following paper -  
-> Matlock, K., Dhruba, S. R. et al., "An investigation of proteomic data for application in precision medicine," 2018 IEEE EMBS International Conference on Biomedical & Health   Informatics (BHI), Las Vegas, NV, 2018, pp. 377-380. 
-  DOI: 10.1109/BHI.2018.8333447.
+    > Matlock, K., Dhruba, S. R. et al., "An investigation of proteomic data for application in precision medicine," 2018 IEEE EMBS International Conference on Biomedical & Health   Informatics (BHI), Las Vegas, NV, 2018, pp. 377-380. 
+      DOI: 10.1109/BHI.2018.8333447.
