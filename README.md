@@ -9,7 +9,7 @@ Majority of the drug sensitivity predictive modeling approaches attempt to predi
 ### Description
 
 #### Data
-We use *in vitro* dose-time proteomic and cellular viability information post drug administration for 10 BRAF Melanoma V<sup>600E/D</sup> cell lines from the HMS-LINCS database which is part of the NIH Library of Integrated Network-based Cellular Signatures (LINCS) Program at Harvard Medical School. We were forced to limit our analysis to a single dataset since, to our knowledge, HMS-LINCS is the only publicly available source offering functional responses as well as predictors. To know more about the data, please look into our investigation in modeling drug sensitivity using proteomic features in our previous work from BHI 2018: (An investigation of proteomic data for application in precision medicine)[https://ieeexplore.ieee.org/abstract/document/8333447]. 
+We use *in vitro* dose-time proteomic and cellular viability information post drug administration for 10 BRAF Melanoma V<sup>600E/D</sup> cell lines from the HMS-LINCS database which is part of the NIH Library of Integrated Network-based Cellular Signatures (LINCS) Program at Harvard Medical School. We were forced to limit our analysis to a single dataset since, to our knowledge, HMS-LINCS is the only publicly available source offering functional responses as well as predictors. To know more about the data, please look into our investigation in modeling drug sensitivity using proteomic features in our previous work from BHI 2018: [An investigation of proteomic data for application in precision medicine](https://ieeexplore.ieee.org/abstract/document/8333447). 
 
 
 #### Description
