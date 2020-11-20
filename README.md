@@ -24,8 +24,18 @@ From this equation, we can get a recursive relation for drug sensitivity between
 The details of the model is described in our 2019 paper: [Recursive model for dose-time responses in pharmacological studies](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2831-4). 
 
 
-### File description
+#### File description
 This repository contains the necessary code to reproduce the results described in the paper and the corresponding data for the synthetic experiment.  
     `RecursiveHybridModel.m`: Model class with all necessary methods  
     `synthetic_data_analysis_SRD_v2.m`: Synthetic experiment code  
     `synthetic_recursive.mat`: Data file for synthetic experiment  
+
+
+## How to Cite
+If you use our Recursive Hybrid approach for your research/application, please cite the following paper -
+    > Dhruba, S.R., Rahman, A. et al. Recursive model for dose-time responses in pharmacological studies. BMC Bioinformatics 20, 317 (2019). 
+      DOI: https://doi.org/10.1186/s12859-019-2831-4
+
+If you use our work on the exploration of proteomic data for predictive modeling of drug sensitivity, please cite the following paper -
+    > Matlock, K., Dhruba, S. R. et al., "An investigation of proteomic data for application in precision medicine," 2018 IEEE EMBS International Conference on Biomedical & Health Informatics (BHI), Las Vegas, NV, 2018, pp. 377-380. 
+      DOI: 10.1109/BHI.2018.8333447.
