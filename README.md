@@ -26,9 +26,9 @@ The details of the model is described in our 2019 paper: [Recursive model for do
 
 #### File description
 This repository contains the necessary code to reproduce the results described in the paper and the corresponding data for the synthetic experiment.  
-* <code>RecursiveHybridModel.m<\code>: Model class with all necessary methods  
-* <code>synthetic_data_analysis_SRD_v2.m<\code>: Synthetic experiment code  
-* <code>synthetic_recursive.mat<\code>: Data file for synthetic experiment  
+* `RecursiveHybridModel.m`: Model class with all necessary methods  
+* `synthetic_data_analysis_SRD_v2.m`: Synthetic experiment code  
+* `synthetic_recursive.mat`: Data file for synthetic experiment  
 
 
 ### How to Cite
