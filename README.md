@@ -1,4 +1,4 @@
-## Modeling the Complete Dose-time Drug Sensitivity Surface
+## Modeling the Complete Dose-Time Drug Sensitivity Surface
 
 **Reference:** [Recursive model for dose-time responses in pharmacological studies](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-2831-4)
 
@@ -31,7 +31,7 @@ This repository contains the necessary code to reproduce the results described i
     `synthetic_recursive.mat`: Data file for synthetic experiment  
 
 
-## How to Cite
+### How to Cite
 If you use our Recursive Hybrid approach for your research/application, please cite the following paper -  
 > Dhruba, S.R., Rahman, A. et al. Recursive model for dose-time responses in pharmacological studies. BMC Bioinformatics 20, 317 (2019). 
   DOI: https://doi.org/10.1186/s12859-019-2831-4
