@@ -38,4 +38,4 @@ If you use our Recursive Hybrid approach for your research/application, please c
 
 If you use our work on the exploration of proteomic data for predictive modeling of drug sensitivity, please cite the following paper -  
 > Matlock, K., Dhruba, S. R. et al., "An investigation of proteomic data for application in precision medicine," 2018 IEEE EMBS International Conference on Biomedical & Health   Informatics (BHI), Las Vegas, NV, 2018, pp. 377-380. 
-  DOI: 10.1109/BHI.2018.8333447.
+  DOI: https://doi.org/10.1109/BHI.2018.8333447
