@@ -25,10 +25,15 @@ The details of the model is described in our 2019 paper: [Recursive model for do
 
 
 #### File description
-This repository contains the necessary code to reproduce the results described in the paper and the corresponding data for the synthetic experiment.  
+This repository contains the necessary code to reproduce the results described in the paper and the corresponding source for the data used in the simulation experiments.  
+
+  * * **Data:** Contains data for modeling. The processed data used in our experiments can be found [here](https://www.dropbox.com/sh/rcjpw8j9iwup1i6/AACH_tpjARwqB8DeeKhJRCINa?dl=0)
+  * **[Data/`synthetic_recursive.mat`](https://github.com/dhruba018/Dose_Time_Response_Recursive_Model/blob/master/Data/syntheic_recursive.mat):** Data file for synthetic experiment  
   * **[`RecursiveHybridModel.m`](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/RecursiveHybridModel.m):** Model class with all necessary methods  
-  * **[`synthetic_data_analysis_SRD_v2.m`](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/synthetic_data_analysis_SRD_v2.m):** Synthetic experiment code  
-  * **[`synthetic_recursive.mat`](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/syntheic_recursive.mat):** Data file for synthetic experiment  
+  * **[`synthetic_data_analysis_SRD_v2.m`](https://github.com/dhruba018/Dose_time_Response_Recursive_Model/blob/master/synthetic_data_analysis_SRD_v2.m):** Synthetic experiment code for modeling synthetic data  
+  * **[`LINCS_data_preprocessing.m`](https://github.com/dhruba018/Dose_Time_Response_Recursive_Model/blob/master/LINCS_data_preprocessing.m):** Code for preprocessing HMS-LINCS proteomics data  
+  * **[`Lincs_72hr_impute.m`](https://github.com/dhruba018/Dose_Time_Response_Recursive_Model/blob/master/Lincs_72hr_impute.m):** Code for imputing proteomic expression values at 72 hours using spline interpolation  
+  * **[`lincs_rf_dataset_SRD_v2.m`](https://github.com/dhruba018/Dose_Time_Response_Recursive_Model/blob/master/lincs_rf_dataset_SRD_v2.m):** Code for modeling using HMS-LINCS data  
 
 
 ### How to Cite
