@@ -24,7 +24,7 @@ for i = 1:numel(clines)
 end
 
 pData_azd_72 = cell2table(pData_azd_72, 'VariableNames', pData_azd.Properties.VariableNames);
-% writetable(pData_azd_72, 'HMS_LINCS_RPPA_Data_Extrapolated_72_hr_SRD_June_17_azd.xlsx',...
+% writetable(pData_azd_72, 'Data\HMS_LINCS_RPPA_Data_Extrapolated_72_hr_SRD_June_17_azd.xlsx',...
 %                     'WriteVariableNames', 1)
 
 
