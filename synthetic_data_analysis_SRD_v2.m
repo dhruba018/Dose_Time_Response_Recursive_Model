@@ -8,7 +8,7 @@
 clc;    clear;     close all
 
 % Read data as tables...
-PATH = [pwd, '\'];
+PATH = 'Data\';
 FILENAME = 'syntheic_recursive.mat';
 syn_data = load([PATH, FILENAME]);                 % Read as a structure
 dose_time_px = syn_data.pxdata;
