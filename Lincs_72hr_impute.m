@@ -1,7 +1,7 @@
 clc;    clear;      close all
 
 % Path & filenames...
-PATH = sprintf('C:/Users/%s/Google Drive/NewTest/CNB-MAC_18_Paper/', getenv('username'));
+PATH = 'Data/';
 FILENAME1 = 'HMS_LINCS_RPPA_Data_Normalized_(Innoscan_Mapix)_SRD_Sep_21_azd.xlsx';
 
 % Read data as table...
