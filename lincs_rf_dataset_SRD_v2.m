@@ -2,7 +2,7 @@
 clc;    clear
 
 % Path & filenames...
-PATH = sprintf('C:/Users/%s/Google Drive/NewTest/CNB-MAC_18_Paper/Codes/', getenv('username'));
+PATH = 'Data/';
 FILENAME1 = 'HMS_LINCS_RPPA_Data_Normalized_(Innoscan_Mapix)_SRD_Sep_21_azd.xlsx';
 FILENAME2 = 'Copy of HMS_LINCS_Viability_Data_Normalized_SRD_Sep_21-2.xlsx';
 FILENAME3 = 'HMS_LINCS_RPPA_Data_Extrapolated_All_72_hr_SRD_July_25.xlsx';
