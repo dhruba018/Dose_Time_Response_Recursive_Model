@@ -1,6 +1,6 @@
 clc;    clear;      close all
 
-pData = readtable('HMS_LINCS_RPPA_Data_Normalized_(Innoscan_Mapix)_SRD_Sep_21_azd.xlsx');
+pData = readtable('Data\HMS_LINCS_RPPA_Data_Normalized_(Innoscan_Mapix)_SRD_Sep_21_azd.xlsx');
 drugs = unique(pData.SmallMoleculeName);
 proteins = pData.Properties.VariableNames(5:end)';
 pData_azd = pData(strcmpi(pData.SmallMoleculeName, 'AZ-628'), :);
